@@ -205,7 +205,7 @@ void doEncoder(){
           if(sel_idx == 0){
             //adjust vox
             threshold += enc.getDir()*10;
-            if(threshold > 820){ threshold = 820;}
+            if(threshold > 1000){ threshold = 1000;}
             if(threshold < 10 ){ threshold = 1;} 
           }else if(sel_idx == 1){
             //adjust delay
