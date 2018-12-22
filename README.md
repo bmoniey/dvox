@@ -1,30 +1,32 @@
 # dvox
 Arduino Vox for Ham Radio Sound Card Interface
-By: N6MNE
+Based on DuinoVOX by Kevin Loughin KB9RLW
+Modified by: Brian Moran N6MNE
 
 ## 1. Features:
-*USB Sound Card
 
-*VOX Detection Circuit (listens on right sound card channel, Threshold detect on A1 of Arduino)
+* USB Sound Card Interface (USB - Mic, Headphone Left, Headphone Right)
 
-*Push to Talk Relay (D13 of Arduino Nano)
+* VOX Detection Circuit (listens on headphone right sound card channel, Threshold detect on A1 of Arduino)
 
-*Left Channel Connected to Radio Mic via Audio Transformer
+* Push to Talk Relay (D13 of Arduino Nano)
 
-*Microphone Connected to Radio Headphone Jack via Audio Transformer
+* Left Channel Connected to Radio Mic via Audio Transformer
 
-*Mic Gain Adjust pot
+* Microphone Connected to Radio Headphone Jack via Audio Transformer
 
-*Headphone Gain Adjust pot
+* Mic Gain Adjust pot
 
-*SSD1306 OLED Display
+* Headphone Gain Adjust pot
 
-*KY-40 Encoder to drive menu
+* SSD1306 OLED Display
+
+* KY-40 Encoder to drive menu
 
 ## 2.Useful Links:
 
-*https://vk6ysf.com/scits430s.htm
+* https://vk6ysf.com/scits430s.htm
 
-*http://solorb.com/elect/hamcirc/ts430interface/
+* http://solorb.com/elect/hamcirc/ts430interface/
 
-*http://kb9rlw.blogspot.com/2016/08/cheap-and-easy-to-build-digital-modes.html
+* http://kb9rlw.blogspot.com/2016/08/cheap-and-easy-to-build-digital-modes.html
