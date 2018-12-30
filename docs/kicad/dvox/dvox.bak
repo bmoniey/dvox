@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5BFB5548
-P 2250 2450
-F 0 "A1" H 2250 1364 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 2250 1273 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 2400 1500 50  0001 L CNN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 2250 1450 50  0001 C CNN
-	1    2250 2450
+P 1650 2050
+F 0 "A1" H 1650 964 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 1650 873 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 1800 1100 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 1650 1050 50  0001 C CNN
+	1    1650 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -223,7 +223,7 @@ Wire Wire Line
 Connection ~ 6400 1500
 Text GLabel 7100 1500 2    50   Input ~ 0
 A1
-Text GLabel 2750 2550 2    50   Input ~ 0
+Text GLabel 2150 2150 2    50   Input ~ 0
 A1
 Text GLabel 4500 1800 0    50   Input ~ 0
 HR
@@ -238,7 +238,7 @@ F 3 "~" H 10100 1350 50  0001 C CNN
 	1    10100 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 8750 1150 0    50   Input ~ 0
+Text GLabel 8050 1050 0    50   Input ~ 0
 HL
 $Comp
 L power:GND #PWR0106
@@ -251,7 +251,7 @@ F 3 "" H 8750 1700 50  0001 C CNN
 	1    8750 1700
 	1    0    0    -1  
 $EndComp
-Text GLabel 10350 1350 2    50   Input ~ 0
+Text GLabel 10800 1050 2    50   Input ~ 0
 MIC_OUT
 Text GLabel 9850 5550 2    50   Input ~ 0
 SPKR
@@ -279,7 +279,7 @@ F 3 "" H 8650 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8650 2800 8650 2900
-Text GLabel 8250 2600 0    50   Input ~ 0
+Text GLabel 7650 2300 0    50   Input ~ 0
 MIC_IN
 $Comp
 L Device:R_US R9
@@ -384,44 +384,44 @@ F 3 "" H 9550 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9550 4600 9550 4800
-Text GLabel 1750 3150 0    50   Input ~ 0
+Text GLabel 1150 2750 0    50   Input ~ 0
 D13
 $Comp
 L power:GND #PWR0110
 U 1 1 5BFBF2E0
-P 2250 3750
-F 0 "#PWR0110" H 2250 3500 50  0001 C CNN
-F 1 "GND" H 2255 3577 50  0000 C CNN
-F 2 "" H 2250 3750 50  0001 C CNN
-F 3 "" H 2250 3750 50  0001 C CNN
-	1    2250 3750
+P 1650 3350
+F 0 "#PWR0110" H 1650 3100 50  0001 C CNN
+F 1 "GND" H 1655 3177 50  0000 C CNN
+F 2 "" H 1650 3350 50  0001 C CNN
+F 3 "" H 1650 3350 50  0001 C CNN
+	1    1650 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 3450 2250 3600
+	1650 3050 1650 3200
 Wire Wire Line
-	2350 3450 2350 3600
+	1750 3050 1750 3200
 Wire Wire Line
-	2350 3600 2250 3600
-Connection ~ 2250 3600
+	1750 3200 1650 3200
+Connection ~ 1650 3200
 Wire Wire Line
-	2250 3600 2250 3750
+	1650 3200 1650 3350
 $Comp
 L power:+5V #PWR0111
 U 1 1 5BFC0292
-P 2450 1250
-F 0 "#PWR0111" H 2450 1100 50  0001 C CNN
-F 1 "+5V" H 2465 1423 50  0000 C CNN
-F 2 "" H 2450 1250 50  0001 C CNN
-F 3 "" H 2450 1250 50  0001 C CNN
-	1    2450 1250
+P 1850 850
+F 0 "#PWR0111" H 1850 700 50  0001 C CNN
+F 1 "+5V" H 1865 1023 50  0000 C CNN
+F 2 "" H 1850 850 50  0001 C CNN
+F 3 "" H 1850 850 50  0001 C CNN
+	1    1850 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 1250 2450 1450
-Text GLabel 2750 2850 2    50   Input ~ 0
+	1850 850  1850 1000
+Text GLabel 2150 2450 2    50   Input ~ 0
 SDA
-Text GLabel 2750 2950 2    50   Input ~ 0
+Text GLabel 2150 2550 2    50   Input ~ 0
 SCL
 $Comp
 L Connector:Conn_01x04_Male J1
@@ -503,11 +503,11 @@ Text GLabel 1850 5650 2    50   Input ~ 0
 DAT
 Text GLabel 1850 5550 2    50   Input ~ 0
 SW
-Text GLabel 1750 2050 0    50   Input ~ 0
+Text GLabel 1150 1650 0    50   Input ~ 0
 CLK
-Text GLabel 1750 2150 0    50   Input ~ 0
+Text GLabel 1150 1750 0    50   Input ~ 0
 DAT
-Text GLabel 1750 2250 0    50   Input ~ 0
+Text GLabel 1150 1850 0    50   Input ~ 0
 SW
 $Comp
 L Device:Transformer_AUDIO T1
@@ -547,11 +547,9 @@ Wire Wire Line
 	9550 1550 10100 1550
 Wire Wire Line
 	10100 1550 10100 1500
-Text GLabel 10350 1550 2    50   Input ~ 0
+Text GLabel 10800 1550 2    50   Input ~ 0
 MIC_GND
 Connection ~ 10100 1550
-Wire Wire Line
-	10100 1550 10350 1550
 Wire Wire Line
 	10350 1350 10250 1350
 $Comp
@@ -565,7 +563,7 @@ F 3 "~" H 9200 2600 50  0001 C CNN
 	1    9200 2600
 	1    0    0    -1  
 $EndComp
-Text GLabel 10450 2000 2    50   Input ~ 0
+Text GLabel 10850 2000 2    50   Input ~ 0
 SPKR
 $Comp
 L Device:R_US R8
@@ -608,15 +606,9 @@ Wire Wire Line
 	9600 2800 9750 2800
 Wire Wire Line
 	9750 2800 9750 2750
-Text GLabel 10500 2400 2    50   Input ~ 0
+Text GLabel 10900 2300 2    50   Input ~ 0
 LINE
-Wire Wire Line
-	10500 2400 10300 2400
-Wire Wire Line
-	10000 2400 9950 2400
 Connection ~ 9750 2400
-Wire Wire Line
-	10450 2000 10300 2000
 Wire Wire Line
 	10000 2000 9750 2000
 Wire Wire Line
@@ -634,10 +626,8 @@ Wire Wire Line
 Connection ~ 8650 2800
 Text GLabel 9900 5950 2    50   Input ~ 0
 LINE
-Text GLabel 10500 2800 2    50   Input ~ 0
+Text GLabel 10900 2800 2    50   Input ~ 0
 LGND
-Wire Wire Line
-	9750 2800 10500 2800
 Connection ~ 9750 2800
 Text GLabel 9850 5650 2    50   Input ~ 0
 LGND
@@ -649,8 +639,8 @@ Text Notes 5800 1100 0    50   Italic 0
 VOX Interface\n
 Text Notes 8750 700  0    50   Italic 0
 Radio Interface
-Text Notes 2500 4000 0    50   Italic 0
-Sound Card will provide power for arduino and Vox Interface via USB port from PC.
+Text Notes 4050 3550 0    50   Italic 0
+Sound Card USB Cable will provide power\nfor arduino and Vox Interface via USB port from PC.
 $Comp
 L pspice:CAP C2
 U 1 1 5BFF9B29
@@ -738,66 +728,59 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male J5
 U 1 1 5C04DA43
-P 4450 4700
-F 0 "J5" H 4556 4878 50  0000 C CNN
-F 1 "PWRIN" H 4556 4787 50  0000 C CNN
-F 2 "" H 4450 4700 50  0001 C CNN
-F 3 "~" H 4450 4700 50  0001 C CNN
-	1    4450 4700
+P 4300 4000
+F 0 "J5" H 4406 4178 50  0000 C CNN
+F 1 "PWRIN" H 4406 4087 50  0000 C CNN
+F 2 "" H 4300 4000 50  0001 C CNN
+F 3 "~" H 4300 4000 50  0001 C CNN
+	1    4300 4000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D_Schottky D3
 U 1 1 5C04DC1A
-P 5100 4700
-F 0 "D3" H 5100 4484 50  0000 C CNN
-F 1 "1N5817" H 5100 4575 50  0000 C CNN
-F 2 "" H 5100 4700 50  0001 C CNN
-F 3 "~" H 5100 4700 50  0001 C CNN
-	1    5100 4700
+P 4950 4000
+F 0 "D3" H 4950 3784 50  0000 C CNN
+F 1 "1N5817" H 4950 3875 50  0000 C CNN
+F 2 "" H 4950 4000 50  0001 C CNN
+F 3 "~" H 4950 4000 50  0001 C CNN
+	1    4950 4000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4950 4700 4650 4700
+	4800 4000 4500 4000
 $Comp
 L power:GND #PWR0122
 U 1 1 5C04F8C5
-P 4700 5400
-F 0 "#PWR0122" H 4700 5150 50  0001 C CNN
-F 1 "GND" H 4705 5227 50  0000 C CNN
-F 2 "" H 4700 5400 50  0001 C CNN
-F 3 "" H 4700 5400 50  0001 C CNN
-	1    4700 5400
+P 4550 4700
+F 0 "#PWR0122" H 4550 4450 50  0001 C CNN
+F 1 "GND" H 4555 4527 50  0000 C CNN
+F 2 "" H 4550 4700 50  0001 C CNN
+F 3 "" H 4550 4700 50  0001 C CNN
+	1    4550 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 4800 4700 4800
+	4500 4100 4550 4100
 $Comp
 L power:+5V #PWR0123
 U 1 1 5C05167D
-P 5550 4600
-F 0 "#PWR0123" H 5550 4450 50  0001 C CNN
-F 1 "+5V" H 5565 4773 50  0000 C CNN
-F 2 "" H 5550 4600 50  0001 C CNN
-F 3 "" H 5550 4600 50  0001 C CNN
-	1    5550 4600
+P 5400 3900
+F 0 "#PWR0123" H 5400 3750 50  0001 C CNN
+F 1 "+5V" H 5415 4073 50  0000 C CNN
+F 2 "" H 5400 3900 50  0001 C CNN
+F 3 "" H 5400 3900 50  0001 C CNN
+	1    5400 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 4700 5550 4700
+	5100 4000 5400 4000
 Wire Wire Line
-	5550 4700 5550 4600
-Text Notes 4200 4400 0    50   ~ 0
+	5400 4000 5400 3900
+Text Notes 4050 3700 0    50   ~ 0
 POWER FROM SOUND CARD USB CONNECTION
-Text GLabel 10400 2600 2    50   Input ~ 0
+Text GLabel 10800 2150 2    50   Input ~ 0
 DIRECT
-Wire Wire Line
-	10400 2600 9950 2600
-Wire Wire Line
-	9950 2600 9950 2400
-Connection ~ 9950 2400
-Wire Wire Line
-	9950 2400 9750 2400
 Text GLabel 9850 6350 2    50   Input ~ 0
 DIRECT
 $Comp
@@ -1030,68 +1013,68 @@ Wire Wire Line
 $Comp
 L Connector:USB_A J4
 U 1 1 5C25E503
-P 3200 4900
-F 0 "J4" H 3255 5367 50  0000 C CNN
-F 1 "USB_A" H 3255 5276 50  0000 C CNN
-F 2 "" H 3350 4850 50  0001 C CNN
-F 3 " ~" H 3350 4850 50  0001 C CNN
-	1    3200 4900
+P 3050 4200
+F 0 "J4" H 3105 4667 50  0000 C CNN
+F 1 "USB_A" H 3105 4576 50  0000 C CNN
+F 2 "" H 3200 4150 50  0001 C CNN
+F 3 " ~" H 3200 4150 50  0001 C CNN
+	1    3050 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0118
 U 1 1 5C2603AC
-P 3200 5300
-F 0 "#PWR0118" H 3200 5050 50  0001 C CNN
-F 1 "GND" H 3205 5127 50  0000 C CNN
-F 2 "" H 3200 5300 50  0001 C CNN
-F 3 "" H 3200 5300 50  0001 C CNN
-	1    3200 5300
+P 3050 4600
+F 0 "#PWR0118" H 3050 4350 50  0001 C CNN
+F 1 "GND" H 3055 4427 50  0000 C CNN
+F 2 "" H 3050 4600 50  0001 C CNN
+F 3 "" H 3050 4600 50  0001 C CNN
+	1    3050 4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_DPST SW1
 U 1 1 5C26218F
-P 3900 4600
-F 0 "SW1" H 3900 4925 50  0000 C CNN
-F 1 "PWR_SW" H 3900 4834 50  0000 C CNN
-F 2 "" H 3900 4600 50  0001 C CNN
-F 3 "" H 3900 4600 50  0001 C CNN
-	1    3900 4600
+P 3750 3900
+F 0 "SW1" H 3750 4225 50  0000 C CNN
+F 1 "PWR_SW" H 3750 4134 50  0000 C CNN
+F 2 "" H 3750 3900 50  0001 C CNN
+F 3 "" H 3750 3900 50  0001 C CNN
+	1    3750 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 4700 3700 4700
+	3350 4000 3550 4000
 $Comp
 L Device:LED D4
 U 1 1 5C269E6B
-P 5550 5150
-F 0 "D4" V 5588 5033 50  0000 R CNN
-F 1 "LED" V 5497 5033 50  0000 R CNN
-F 2 "" H 5550 5150 50  0001 C CNN
-F 3 "~" H 5550 5150 50  0001 C CNN
-	1    5550 5150
+P 5400 4450
+F 0 "D4" V 5438 4333 50  0000 R CNN
+F 1 "LED" V 5347 4333 50  0000 R CNN
+F 2 "" H 5400 4450 50  0001 C CNN
+F 3 "~" H 5400 4450 50  0001 C CNN
+	1    5400 4450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_US R11
 U 1 1 5C26A006
-P 5550 4850
-F 0 "R11" H 5618 4896 50  0000 L CNN
-F 1 "680" H 5618 4805 50  0000 L CNN
-F 2 "" V 5590 4840 50  0001 C CNN
-F 3 "~" H 5550 4850 50  0001 C CNN
-	1    5550 4850
+P 5400 4150
+F 0 "R11" H 5468 4196 50  0000 L CNN
+F 1 "680" H 5468 4105 50  0000 L CNN
+F 2 "" V 5440 4140 50  0001 C CNN
+F 3 "~" H 5400 4150 50  0001 C CNN
+	1    5400 4150
 	1    0    0    -1  
 $EndComp
-Connection ~ 5550 4700
+Connection ~ 5400 4000
 Wire Wire Line
-	4700 4800 4700 5300
+	4550 4100 4550 4600
 Wire Wire Line
-	5550 5300 4700 5300
-Connection ~ 4700 5300
+	5400 4600 4550 4600
+Connection ~ 4550 4600
 Wire Wire Line
-	4700 5300 4700 5400
+	4550 4600 4550 4700
 $Comp
 L moran:8x16Round C7
 U 1 1 5C279198
@@ -1127,4 +1110,150 @@ Wire Wire Line
 	6550 4850 6550 4150
 Wire Wire Line
 	6550 4850 7850 4850
+Text Notes 7500 7500 0    50   ~ 0
+DVOX
+Text Notes 8150 7650 0    50   ~ 0
+12/29/2018
+Text Notes 10650 7650 0    50   ~ 0
+1.1
+Wire Wire Line
+	10100 1550 10650 1550
+$Comp
+L pspice:CAP C11
+U 1 1 5C28F88E
+P 10650 1300
+F 0 "C11" H 10828 1346 50  0000 L CNN
+F 1 "0.1uF" H 10828 1255 50  0000 L CNN
+F 2 "" H 10650 1300 50  0001 C CNN
+F 3 "" H 10650 1300 50  0001 C CNN
+	1    10650 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 10650 1550
+Wire Wire Line
+	10650 1550 10800 1550
+Wire Wire Line
+	10800 1050 10650 1050
+Wire Wire Line
+	10350 1350 10350 1050
+Wire Wire Line
+	10350 1050 10650 1050
+Connection ~ 10650 1050
+$Comp
+L pspice:CAP C12
+U 1 1 5C298B72
+P 10700 2550
+F 0 "C12" H 10878 2596 50  0000 L CNN
+F 1 "0.1uF" H 10878 2505 50  0000 L CNN
+F 2 "" H 10700 2550 50  0001 C CNN
+F 3 "" H 10700 2550 50  0001 C CNN
+	1    10700 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2400 9800 2400
+Wire Wire Line
+	9800 2150 9800 2400
+Connection ~ 9800 2400
+Wire Wire Line
+	9800 2400 10000 2400
+Wire Wire Line
+	10300 2400 10300 2300
+Wire Wire Line
+	10300 2000 10850 2000
+Wire Wire Line
+	9800 2150 10800 2150
+Wire Wire Line
+	10300 2300 10700 2300
+Wire Wire Line
+	9750 2800 10700 2800
+Wire Wire Line
+	10900 2800 10700 2800
+Connection ~ 10700 2800
+Wire Wire Line
+	10900 2300 10700 2300
+Connection ~ 10700 2300
+$Comp
+L pspice:CAP C9
+U 1 1 5C2C2EF7
+P 7850 2550
+F 0 "C9" H 8028 2596 50  0000 L CNN
+F 1 "0.1uF" H 8028 2505 50  0000 L CNN
+F 2 "" H 7850 2550 50  0001 C CNN
+F 3 "" H 7850 2550 50  0001 C CNN
+	1    7850 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2800 8650 2800
+Wire Wire Line
+	8250 2600 8250 2300
+Wire Wire Line
+	8250 2300 7850 2300
+Wire Wire Line
+	7650 2300 7850 2300
+Connection ~ 7850 2300
+$Comp
+L pspice:CAP C10
+U 1 1 5C2D1917
+P 8250 1300
+F 0 "C10" H 8428 1346 50  0000 L CNN
+F 1 "0.1uF" H 8428 1255 50  0000 L CNN
+F 2 "" H 8250 1300 50  0001 C CNN
+F 3 "" H 8250 1300 50  0001 C CNN
+	1    8250 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1550 8750 1550
+Connection ~ 8750 1550
+Wire Wire Line
+	8750 1150 8650 1150
+Wire Wire Line
+	8650 1150 8650 1050
+Wire Wire Line
+	8650 1050 8250 1050
+Wire Wire Line
+	8250 1050 8050 1050
+Connection ~ 8250 1050
+$Comp
+L pspice:CAP C8
+U 1 1 5C2E127B
+P 2500 1250
+F 0 "C8" H 2322 1204 50  0000 R CNN
+F 1 "10uF" H 2322 1295 50  0000 R CNN
+F 2 "" H 2500 1250 50  0001 C CNN
+F 3 "" H 2500 1250 50  0001 C CNN
+	1    2500 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5C2E136F
+P 2500 1500
+F 0 "#PWR0124" H 2500 1250 50  0001 C CNN
+F 1 "GND" H 2505 1327 50  0000 C CNN
+F 2 "" H 2500 1500 50  0001 C CNN
+F 3 "" H 2500 1500 50  0001 C CNN
+	1    2500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1000 1850 1000
+Connection ~ 1850 1000
+Wire Wire Line
+	1850 1000 1850 1050
+$Comp
+L Device:L_Core_Ferrite L1
+U 1 1 5C2EADD9
+P 3600 4950
+F 0 "L1" V 3422 4950 50  0000 C CNN
+F 1 "600@14MHz" V 3513 4950 50  0000 C CNN
+F 2 "" H 3600 4950 50  0001 C CNN
+F 3 "~" H 3600 4950 50  0001 C CNN
+	1    3600 4950
+	0    1    1    0   
+$EndComp
+Text Notes 2900 5300 0    50   ~ 0
+Use Ferrite core on USB cable.\nLooking for about 600Ohms@14MHz.\nUsed stevenson Ferrite #28 Material Core with 5 turns on cable.
 $EndSCHEMATC
