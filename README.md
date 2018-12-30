@@ -1,5 +1,8 @@
 # dvox
-Arduino Vox for Ham Radio Sound Card Interface
+Ham Radio Sound Card Interface
+Arduino Vox Control
+128x64 SSD1306 display operated by rotary encoder and switch
+
 Based on DuinoVOX by Kevin Loughin KB9RLW
 Modified by: Brian Moran N6MNE
 
@@ -30,3 +33,13 @@ Modified by: Brian Moran N6MNE
 * http://solorb.com/elect/hamcirc/ts430interface/
 
 * http://kb9rlw.blogspot.com/2016/08/cheap-and-easy-to-build-digital-modes.html
+
+## 3. Testing
+
+* Radio: TS-430S Mic,PTT, and Head phone interface
+
+* Tested with WSJT-X with FT8
+
+* Tested with FLDigi with BPSK-31
+
+* Sound card: Sabrent USB Sound Card from Amazon (see BOM)
